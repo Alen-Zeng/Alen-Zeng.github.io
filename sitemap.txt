@@ -1,5 +1,5 @@
-http://example.com/2022/08/06/article-title-test/
 http://example.com/2022/08/06/hahaha/
+http://example.com/2022/08/06/article-title-test/
 http://example.com/categories/index.html
 http://example.com/repository/index.html
 http://example.com/tags/index.html
