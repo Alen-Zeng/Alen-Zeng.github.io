@@ -3,11 +3,11 @@
   <title>Alen&#39;s Blog</title>
   
   
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://chenmoshaoalen.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://chenmoshaoalen.github.io/"/>
   <updated>2022-08-06T14:54:25.963Z</updated>
-  <id>http://example.com/</id>
+  <id>https://chenmoshaoalen.github.io/</id>
   
   <author>
     <name>Alen</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>hahah</title>
-    <link href="http://example.com/2022/08/06/hahaha/"/>
-    <id>http://example.com/2022/08/06/hahaha/</id>
+    <link href="https://chenmoshaoalen.github.io/20220806/hahaha/"/>
+    <id>https://chenmoshaoalen.github.io/20220806/hahaha/</id>
     <published>2022-08-06T06:32:52.947Z</published>
     <updated>2022-08-06T14:54:25.963Z</updated>
     
@@ -42,8 +42,8 @@
   
   <entry>
     <title>article title test</title>
-    <link href="http://example.com/2022/08/06/article-title-test/"/>
-    <id>http://example.com/2022/08/06/article-title-test/</id>
+    <link href="https://chenmoshaoalen.github.io/20220806/article-title-test/"/>
+    <id>https://chenmoshaoalen.github.io/20220806/article-title-test/</id>
     <published>2022-08-06T04:43:14.000Z</published>
     <updated>2022-08-06T07:29:43.750Z</updated>
     
@@ -57,15 +57,15 @@
     
     
     
-    <category term="test" scheme="http://example.com/categories/test/"/>
+    <category term="test" scheme="https://chenmoshaoalen.github.io/categories/test/"/>
     
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/2022/08/06/hello-world/"/>
-    <id>http://example.com/2022/08/06/hello-world/</id>
+    <link href="https://chenmoshaoalen.github.io/20220806/hello-world/"/>
+    <id>https://chenmoshaoalen.github.io/20220806/hello-world/</id>
     <published>2022-08-06T03:46:16.743Z</published>
     <updated>2022-08-06T03:46:16.743Z</updated>
     
