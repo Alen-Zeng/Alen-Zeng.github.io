@@ -124,6 +124,11 @@ sub {
 
 img {
   border: 0;
+  box-sizing: border-box;
+  margin: auto;
+  padding: 3px;
+  text-align: center;
+  display: block;
 }
 
 svg:not(:root) {
