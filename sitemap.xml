@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://chenmoshaoalen.github.io/about/index.html</loc>
+    
+    <lastmod>2022-08-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://chenmoshaoalen.github.io/20220806/hahaha/</loc>
     
     <lastmod>2022-08-06</lastmod>
@@ -48,15 +57,6 @@
   
   <url>
     <loc>https://chenmoshaoalen.github.io/links/index.html</loc>
-    
-    <lastmod>2022-08-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://chenmoshaoalen.github.io/about/index.html</loc>
     
     <lastmod>2022-08-06</lastmod>
     
