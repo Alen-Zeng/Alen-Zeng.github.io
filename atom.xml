@@ -6,7 +6,7 @@
   <link href="https://chenmoshaoalen.github.io/atom.xml" rel="self"/>
   
   <link href="https://chenmoshaoalen.github.io/"/>
-  <updated>2022-08-06T14:54:25.963Z</updated>
+  <updated>2022-08-06T03:46:16.743Z</updated>
   <id>https://chenmoshaoalen.github.io/</id>
   
   <author>
@@ -15,52 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>hahah</title>
-    <link href="https://chenmoshaoalen.github.io/20220806/hahaha/"/>
-    <id>https://chenmoshaoalen.github.io/20220806/hahaha/</id>
-    <published>2022-08-06T06:32:52.947Z</published>
-    <updated>2022-08-06T14:54:25.963Z</updated>
-    
-    <content type="html"><![CDATA[<p>test</p><ul><li>update1</li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;test&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;update1&lt;/li&gt;
-&lt;/ul&gt;
-</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>article title test</title>
-    <link href="https://chenmoshaoalen.github.io/20220806/article-title-test/"/>
-    <id>https://chenmoshaoalen.github.io/20220806/article-title-test/</id>
-    <published>2022-08-06T04:43:14.000Z</published>
-    <updated>2022-08-06T07:29:43.750Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="wow"><a href="#wow" class="headerlink" title="wow"></a>wow</h1>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;wow&quot;&gt;&lt;a href=&quot;#wow&quot; class=&quot;headerlink&quot; title=&quot;wow&quot;&gt;&lt;/a&gt;wow&lt;/h1&gt;</summary>
-      
-    
-    
-    
-    <category term="test" scheme="https://chenmoshaoalen.github.io/categories/test/"/>
-    
-    
-  </entry>
   
   <entry>
     <title>Hello World</title>
@@ -79,6 +33,27 @@
     
     
     
+    
+  </entry>
+  
+  <entry>
+    <title>test</title>
+    <link href="https://chenmoshaoalen.github.io/20220805/test/"/>
+    <id>https://chenmoshaoalen.github.io/20220805/test/</id>
+    <published>2022-08-05T14:20:47.000Z</published>
+    <updated>2022-08-07T14:58:03.901Z</updated>
+    
+    <content type="html"><![CDATA[<p>摘要： 测试<span id="more"></span></p><pre><code>testcode test    test</code></pre>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;摘要： 测试</summary>
+    
+    
+    
+    <category term="test" scheme="https://chenmoshaoalen.github.io/categories/test/"/>
+    
+    
+    <category term="test" scheme="https://chenmoshaoalen.github.io/tags/test/"/>
     
   </entry>
   

@@ -243,165 +243,55 @@
     	
         <div class="publishby">
             <span id="busuanzi_container_site_pv">
-                clicks: <span id="busuanzi_value_site_pv" style="font-family:Courier"></span> &nbsp; &nbsp;
-                visitors:<span id="busuanzi_value_site_uv" style="font-family:Courier"></span>
+                阅读:  <span id="busuanzi_value_site_pv" style="font-family:Courier"></span> &nbsp; &nbsp;<br>
+                访客:  <span id="busuanzi_value_site_uv" style="font-family:Courier"></span><br>
             </span>
+            <span id="sitetime"></span>
         </div>
         <!-- <div class="publishby">
         	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
         </div> -->
     </div>
 </footer>
-  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
-<script>
-window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+
+
+<script>function siteTime(){
+    window.setTimeout("siteTime()", 1000);
+    var seconds = 1000;
+    var minutes = seconds * 60;
+    var hours = minutes * 60;
+    var days = hours * 24;
+    var years = days * 365;
+    var today = new Date();
+    var todayYear = today.getFullYear();
+    var todayMonth = today.getMonth()+1;
+    var todayDate = today.getDate();
+    var todayHour = today.getHours();
+    var todayMinute = today.getMinutes();
+    var todaySecond = today.getSeconds();
+    /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+       year - 作为date对象的年份，为4位年份值
+       month - 0-11之间的整数，做为date对象的月份
+       day - 1-31之间的整数，做为date对象的天数
+       hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+       minutes - 0-59之间的整数，做为date对象的分钟数
+       seconds - 0-59之间的整数，做为date对象的秒数
+       microseconds - 0-999之间的整数，做为date对象的毫秒数
+    */
+    var t1 = Date.UTC(2020,05,19,21,20,52); //t1为建站时间
+    var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+    var diff = t2-t1;
+    var diffYears = Math.floor(diff/years);
+    var diffDays = Math.floor((diff/days)-diffYears*365);
+    var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+    var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+    var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+    document.getElementById("sitetime").innerHTML="本站已运行 "+/*diffYears+" 年 "+*/diffDays+" 天"/* +diffHours+"小时"+diffMinutes+"分钟"+diffSeconds+"秒"; */
+    // 因为建站时间还没有一年，就将之注释掉了。需要的可以取消
+    }
+    siteTime();
 </script>
 
-<script src="/js/plugin.min.js"></script>
-
-
-<script src="/js/application.js"></script>
-
-
-    <script>
-(function (window) {
-    var INSIGHT_CONFIG = {
-        TRANSLATION: {
-            POSTS: '文章',
-            PAGES: '页面',
-            CATEGORIES: '分类',
-            TAGS: '标签',
-            UNTITLED: '(未命名)',
-        },
-        ROOT_URL: '/',
-        CONTENT_URL: '/content.json',
-    };
-    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-})(window);
-</script>
-
-<script src="/js/insight.js"></script>
-
-
-
-
-
-
-
-   
-
-
-
-
-
-
-
-<!-- 返回顶部 -->
-<div id="go-top"></div>
-<style type="text/css">
-#go-top {
- width:40px;height:36px;
- background-color:#7b7b7b;
- position:relative;
- border-radius:2px;
- position:fixed;right:10px;bottom:60px;
- cursor:pointer;display:none;
-}
-#go-top:after {
- content:" ";
- position:absolute;left:14px;top:14px;
- border-top:2px solid #fff;border-right:2px solid #fff;
- width:12px;height:12px;
- transform:rotate(-45deg);
-}
-#go-top:hover {
- background-color:#565656;
-}
-</style>
-<script>
-$(function () {
-  var top=$("#go-top");
-  $(window).scroll(function () {
-    ($(window).scrollTop() > 300) ? top.show(300) : top.hide(200);
-    $("#go-top").click(function () {
-      $('body,html').animate({scrollTop:0});
-      return false();
-    })
-  });
-});
-</script>
-
-  <main class="main" role="main">
-  <article class="article article-links article-type-list" itemscope="">
-  <header class="article-header">
-    <h1 itemprop="title">友情链接</h1>
-    <p class="text-muted">
-      欢迎交换链接，可在当前页面留言
-    </p>
-  </header>
-  <div class="article-body">
-    <div class="row">
-      
-        
-          <div class="col-sm-6 col-md-4">
-            <div class="panel panel-default hover-shadow hover-grow">
-              <figure class="media media-middle">
-                <div class="media-left pr-no">
-                  <a href="http://chuangzaoshi.com/" target="_blank" class="img-burn thumb-md media-middle">
-                    <img src="/images/favatar/chuangzaoshi-logo.png" class="w-full" alt="">
-                  </a>
-                </div>
-                <div class="media-body p-0x">
-                  <h4 class="media-heading"><a href="http://chuangzaoshi.com/" target="_blank"><span class="text-dark">创造狮</span></a></h4>
-                  <div class="text-muted">
-                    为创意工作者而设计
-                  </div>
-                </div>
-              </figure>
-            </div>
-          </div>
-          
-        
-          <div class="col-sm-6 col-md-4">
-            <div class="panel panel-default hover-shadow hover-grow">
-              <figure class="media media-middle">
-                <div class="media-left pr-no">
-                  <a href="http://idesign.qq.com/" target="_blank" class="img-burn thumb-md media-middle">
-                    <img src="/images/favatar/idesign-logo.png" class="w-full" alt="">
-                  </a>
-                </div>
-                <div class="media-body p-0x">
-                  <h4 class="media-heading"><a href="http://idesign.qq.com/" target="_blank"><span class="text-dark">腾讯设计导航</span></a></h4>
-                  <div class="text-muted">
-                    网罗全网高逼格的设计站点
-                  </div>
-                </div>
-              </figure>
-            </div>
-          </div>
-          
-    </div>
-  </div>
-</article>
-
-
-</main>
-
-  <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
-	
-    <div class="copyright">
-    	
-        <div class="publishby">
-            <span id="busuanzi_container_site_pv">
-                clicks: <span id="busuanzi_value_site_pv" style="font-family:Courier"></span> &nbsp; &nbsp;
-                visitors:<span id="busuanzi_value_site_uv" style="font-family:Courier"></span>
-            </span>
-        </div>
-        <!-- <div class="publishby">
-        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
-        </div> -->
-    </div>
-</footer>
   <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
 <script>
 window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
@@ -555,9 +445,6 @@ $(function () {
     </script>
   
   
-  /**
-  * 感谢您复制代码，使用代码请注明引用出处
-  * kajweb @ https://blog.iwwee.com
-  */
+
 </body>
 </html>

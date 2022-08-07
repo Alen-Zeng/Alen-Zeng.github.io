@@ -188,49 +188,28 @@
     
   
     <h1 itemprop="name">
-      <a class="article-title" href="/20220806/hahaha/">hahah</a>
+      <a class="article-title" href="/20220805/test/">test</a>
     </h1>
   
 
   </div>
   
+  <div class="article-entry text-muted" itemprop="description">
+    <p>摘要： 测试
+  </div>
+  
   <p class="article-meta">
     <span class="article-date">
-    <i class="icon icon-calendar-check"></i>
-	<a href="/20220806/hahaha/" class="article-date">
-	  <time datetime="2022-08-06T06:32:52.947Z" itemprop="datePublished">8月 6</time>
+    <i class="icon icon-calendar"></i>
+	<a href="/20220805/test/" class="article-date">
+		发布于 <time datetime="2022-08-05T14:20:47.000Z" itemprop="datePublished">2022-08-05</time>
 	</a>
 </span>
-    
-    
 
-    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/20220806/hahaha/#comments" class="article-comment-link">评论</a></span>
-    
-	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 2(字)</span>
-	
-	
-
-  </p>
-</article>
-
-    
-      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="article-header">
-    
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/20220806/article-title-test/">article title test</a>
-    </h1>
-  
-
-  </div>
-  
-  <p class="article-meta">
-    <span class="article-date">
+<span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/20220806/article-title-test/" class="article-date">
-	  <time datetime="2022-08-06T04:43:14.000Z" itemprop="datePublished">8月 6</time>
+	<a href="/20220805/test/" class="article-date">
+		更新于 <time datetime="2022-08-07T14:58:03.901Z" itemprop="dateUpdated">2022-08-07</time>
 	</a>
 </span>
     
@@ -240,11 +219,16 @@
   </span>
 
     
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link-link" href="/tags/test/" rel="tag">test</a>
+  </span>
 
-    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/20220806/article-title-test/#comments" class="article-comment-link">评论</a></span>
+
+    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/20220805/test/#comments" class="article-comment-link">评论</a></span>
     
 	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1(字)</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 8(字)</span>
 	
 	
 
@@ -265,9 +249,16 @@
   
   <p class="article-meta">
     <span class="article-date">
+    <i class="icon icon-calendar"></i>
+	<a href="/20220806/hello-world/" class="article-date">
+		发布于 <time datetime="2022-08-06T03:46:16.743Z" itemprop="datePublished">2022-08-06</time>
+	</a>
+</span>
+
+<span class="article-date">
     <i class="icon icon-calendar-check"></i>
 	<a href="/20220806/hello-world/" class="article-date">
-	  <time datetime="2022-08-06T03:46:16.743Z" itemprop="datePublished">8月 6</time>
+		更新于 <time datetime="2022-08-06T03:46:16.743Z" itemprop="dateUpdated">2022-08-06</time>
 	</a>
 </span>
     
@@ -295,223 +286,55 @@
     	
         <div class="publishby">
             <span id="busuanzi_container_site_pv">
-                clicks: <span id="busuanzi_value_site_pv" style="font-family:Courier"></span> &nbsp; &nbsp;
-                visitors:<span id="busuanzi_value_site_uv" style="font-family:Courier"></span>
+                阅读:  <span id="busuanzi_value_site_pv" style="font-family:Courier"></span> &nbsp; &nbsp;<br>
+                访客:  <span id="busuanzi_value_site_uv" style="font-family:Courier"></span><br>
             </span>
+            <span id="sitetime"></span>
         </div>
         <!-- <div class="publishby">
         	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
         </div> -->
     </div>
 </footer>
-  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
-<script>
-window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+
+
+<script>function siteTime(){
+    window.setTimeout("siteTime()", 1000);
+    var seconds = 1000;
+    var minutes = seconds * 60;
+    var hours = minutes * 60;
+    var days = hours * 24;
+    var years = days * 365;
+    var today = new Date();
+    var todayYear = today.getFullYear();
+    var todayMonth = today.getMonth()+1;
+    var todayDate = today.getDate();
+    var todayHour = today.getHours();
+    var todayMinute = today.getMinutes();
+    var todaySecond = today.getSeconds();
+    /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+       year - 作为date对象的年份，为4位年份值
+       month - 0-11之间的整数，做为date对象的月份
+       day - 1-31之间的整数，做为date对象的天数
+       hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+       minutes - 0-59之间的整数，做为date对象的分钟数
+       seconds - 0-59之间的整数，做为date对象的秒数
+       microseconds - 0-999之间的整数，做为date对象的毫秒数
+    */
+    var t1 = Date.UTC(2020,05,19,21,20,52); //t1为建站时间
+    var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+    var diff = t2-t1;
+    var diffYears = Math.floor(diff/years);
+    var diffDays = Math.floor((diff/days)-diffYears*365);
+    var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+    var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+    var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+    document.getElementById("sitetime").innerHTML="本站已运行 "+/*diffYears+" 年 "+*/diffDays+" 天"/* +diffHours+"小时"+diffMinutes+"分钟"+diffSeconds+"秒"; */
+    // 因为建站时间还没有一年，就将之注释掉了。需要的可以取消
+    }
+    siteTime();
 </script>
 
-<script src="/js/plugin.min.js"></script>
-
-
-<script src="/js/application.js"></script>
-
-
-    <script>
-(function (window) {
-    var INSIGHT_CONFIG = {
-        TRANSLATION: {
-            POSTS: '文章',
-            PAGES: '页面',
-            CATEGORIES: '分类',
-            TAGS: '标签',
-            UNTITLED: '(未命名)',
-        },
-        ROOT_URL: '/',
-        CONTENT_URL: '/content.json',
-    };
-    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-})(window);
-</script>
-
-<script src="/js/insight.js"></script>
-
-
-
-
-
-
-   
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-<!-- 返回顶部 -->
-<div id="go-top"></div>
-<style type="text/css">
-#go-top {
- width:40px;height:36px;
- background-color:#7b7b7b;
- position:relative;
- border-radius:2px;
- position:fixed;right:10px;bottom:60px;
- cursor:pointer;display:none;
-}
-#go-top:after {
- content:" ";
- position:absolute;left:14px;top:14px;
- border-top:2px solid #fff;border-right:2px solid #fff;
- width:12px;height:12px;
- transform:rotate(-45deg);
-}
-#go-top:hover {
- background-color:#565656;
-}
-</style>
-<script>
-$(function () {
-  var top=$("#go-top");
-  $(window).scroll(function () {
-    ($(window).scrollTop() > 300) ? top.show(300) : top.hide(200);
-    $("#go-top").click(function () {
-      $('body,html').animate({scrollTop:0});
-      return false();
-    })
-  });
-});
-</script>
-
-  <main class="main" role="main">
-  
-  <div class="content article-list">
-    
-      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="article-header">
-    
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/20220806/hahaha/">hahah</a>
-    </h1>
-  
-
-  </div>
-  
-  <p class="article-meta">
-    <span class="article-date">
-    <i class="icon icon-calendar-check"></i>
-	<a href="/20220806/hahaha/" class="article-date">
-	  <time datetime="2022-08-06T06:32:52.947Z" itemprop="datePublished">8月 6</time>
-	</a>
-</span>
-    
-    
-
-    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/20220806/hahaha/#comments" class="article-comment-link">评论</a></span>
-    
-	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 2(字)</span>
-	
-	
-
-  </p>
-</article>
-
-    
-      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="article-header">
-    
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/20220806/article-title-test/">article title test</a>
-    </h1>
-  
-
-  </div>
-  
-  <p class="article-meta">
-    <span class="article-date">
-    <i class="icon icon-calendar-check"></i>
-	<a href="/20220806/article-title-test/" class="article-date">
-	  <time datetime="2022-08-06T04:43:14.000Z" itemprop="datePublished">8月 6</time>
-	</a>
-</span>
-    
-  <span class="article-category">
-    <i class="icon icon-folder"></i>
-    <a class="article-category-link" href="/categories/test/">test</a>
-  </span>
-
-    
-
-    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/20220806/article-title-test/#comments" class="article-comment-link">评论</a></span>
-    
-	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1(字)</span>
-	
-	
-
-  </p>
-</article>
-
-    
-      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="article-header">
-    
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/20220806/hello-world/">Hello World</a>
-    </h1>
-  
-
-  </div>
-  
-  <p class="article-meta">
-    <span class="article-date">
-    <i class="icon icon-calendar-check"></i>
-	<a href="/20220806/hello-world/" class="article-date">
-	  <time datetime="2022-08-06T03:46:16.743Z" itemprop="datePublished">8月 6</time>
-	</a>
-</span>
-    
-    
-
-    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/20220806/hello-world/#comments" class="article-comment-link">评论</a></span>
-    
-	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 75(字)</span>
-	
-	
-
-  </p>
-</article>
-
-    
-  </div>
-
-   
-</main>
-
-  <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
-	
-    <div class="copyright">
-    	
-        <div class="publishby">
-            <span id="busuanzi_container_site_pv">
-                clicks: <span id="busuanzi_value_site_pv" style="font-family:Courier"></span> &nbsp; &nbsp;
-                visitors:<span id="busuanzi_value_site_uv" style="font-family:Courier"></span>
-            </span>
-        </div>
-        <!-- <div class="publishby">
-        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
-        </div> -->
-    </div>
-</footer>
   <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
 <script>
 window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
@@ -669,9 +492,6 @@ $(function () {
     </script>
   
   
-  /**
-  * 感谢您复制代码，使用代码请注明引用出处
-  * kajweb @ https://blog.iwwee.com
-  */
+
 </body>
 </html>

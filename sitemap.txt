@@ -1,6 +1,5 @@
+https://chenmoshaoalen.github.io/20220805/test/
 https://chenmoshaoalen.github.io/about/index.html
-https://chenmoshaoalen.github.io/20220806/hahaha/
-https://chenmoshaoalen.github.io/20220806/article-title-test/
 https://chenmoshaoalen.github.io/categories/index.html
 https://chenmoshaoalen.github.io/repository/index.html
 https://chenmoshaoalen.github.io/tags/index.html
@@ -9,4 +8,5 @@ https://chenmoshaoalen.github.io/books/index.html
 https://chenmoshaoalen.github.io/404.html
 https://chenmoshaoalen.github.io/20220806/hello-world/
 https://chenmoshaoalen.github.io/
+https://chenmoshaoalen.github.io/tags/test/
 https://chenmoshaoalen.github.io/categories/test/
