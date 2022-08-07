@@ -280,5 +280,254 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
 
+
+<!-- 返回顶部 -->
+<div id="go-top"></div>
+<style type="text/css">
+#go-top {
+ width:40px;height:36px;
+ background-color:#7b7b7b;
+ position:relative;
+ border-radius:2px;
+ position:fixed;right:10px;bottom:60px;
+ cursor:pointer;display:none;
+}
+#go-top:after {
+ content:" ";
+ position:absolute;left:14px;top:14px;
+ border-top:2px solid #fff;border-right:2px solid #fff;
+ width:12px;height:12px;
+ transform:rotate(-45deg);
+}
+#go-top:hover {
+ background-color:#565656;
+}
+</style>
+<script>
+$(function () {
+  var top=$("#go-top");
+  $(window).scroll(function () {
+    ($(window).scrollTop() > 300) ? top.show(300) : top.hide(200);
+    $("#go-top").click(function () {
+      $('body,html').animate({scrollTop:0});
+      return false();
+    })
+  });
+});
+</script>
+
+  <main class="main" role="main">
+  <article class="article article-repository article-type-list" itemscope="">
+  <header class="article-header">
+    <h1 itemprop="title">Repositories</h1>
+    <p class="text-muted">I have <span id="repo-count">0</span> projects on <span id="repo-platform">Github</span></p>
+  </header>
+  <div class="article-body">
+    <div class="repo-content">
+      <div class="blankslate">
+        <p>正在加载...</p>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+<!--项模版-->
+<script type="text/template" id="list-template">
+  <li class="col-sm-6 col-md-6 col-lg-4">
+    <div class="repo hover-shadow hover-grow">
+      <div class="repo-image geopattern" data-pattern-id="{%=name%}"></div>
+      <h3 class="repo-title"><a href="{%=clone_url%}" target="_blank" rel="external nofollow noopener noreferrer">{%=full_name%}</a></h3>
+      <p class="repo-body">{%=description%}</p>
+      <div class="repo-meta">
+        <span class="meta meta-type pull-left" aria-label="{%=language%} project">{%=language%}</span>
+        <span class="meta meta-star" aria-label="{%=stargazers_count%} stars"><i class="icon icon-star-fill"></i> {%=stargazers_count%}</span>
+        <span class="meta meta-fork" aria-label="{%=forks_count%} forks"><i class="icon icon-code-fork"></i> {%=forks_count%}</span>
+        <span class="meta meta-last-updated" aria-label="最后更新时间：{%=updated_at%}">
+        <i class="icon icon-clock"></i> <time datetime="{%=updated_at%}">{%=updated_at%}</time></span>
+      </div>
+    </div>
+  </li>
+</script>
+
+<!--获取失败模版-->
+<script type="text/template" id="error-template">
+  <h3>加载失败</h3><p>请刷新或稍后再试...</p>
+</script>
+</main>
+
+  <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+	
+    <div class="copyright">
+    	
+        <div class="publishby">
+            <span id="busuanzi_container_site_pv">
+                clicks: <span id="busuanzi_value_site_pv" style="font-family:Courier"></span> &nbsp; &nbsp;
+                visitors:<span id="busuanzi_value_site_uv" style="font-family:Courier"></span>
+            </span>
+        </div>
+        <!-- <div class="publishby">
+        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div> -->
+    </div>
+</footer>
+  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+
+<script src="/js/plugin.min.js"></script>
+
+
+<script src="/js/application.js"></script>
+
+
+    <script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+<!-- 返回顶部 -->
+<div id="go-top"></div>
+<style type="text/css">
+#go-top {
+ width:40px;height:36px;
+ background-color:#7b7b7b;
+ position:relative;
+ border-radius:2px;
+ position:fixed;right:10px;bottom:60px;
+ cursor:pointer;display:none;
+}
+#go-top:after {
+ content:" ";
+ position:absolute;left:14px;top:14px;
+ border-top:2px solid #fff;border-right:2px solid #fff;
+ width:12px;height:12px;
+ transform:rotate(-45deg);
+}
+#go-top:hover {
+ background-color:#565656;
+}
+</style>
+<script>
+$(function () {
+  var top=$("#go-top");
+  $(window).scroll(function () {
+    ($(window).scrollTop() > 300) ? top.show(300) : top.hide(200);
+    $("#go-top").click(function () {
+      $('body,html').animate({scrollTop:0});
+      return false();
+    })
+  });
+});
+</script>
+
+  
+    <style>
+      .copy-btn {
+        display: inline-block;
+        padding: 6px 12px;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 20px;
+        color: #333;
+        white-space: nowrap;
+        vertical-align: middle;
+        cursor: pointer;
+        background-color: #eee;
+        background-image: linear-gradient(#fcfcfc, #eee);
+        border: 1px solid #d5d5d5;
+        border-radius: 3px;
+        user-select: none;
+        outline: 0;
+      }
+  
+      .highlight-wrap .copy-btn {
+        transition: opacity .3s ease-in-out;
+        opacity: 0;
+        padding: 2px 6px;
+        position: absolute;
+        right: 4px;
+        top: 8px;
+        z-index: 2;
+      }
+  
+      .highlight-wrap:hover .copy-btn,
+          .highlight-wrap .copy-btn:focus {
+        opacity: 1
+      }
+  
+      .highlight-wrap {
+        position: relative;
+      }
+    </style>
+    
+    <script>
+      addLoadEvent(()=>{
+        $('.highlight').each(function (i, e) {
+          var $wrap = $('<div>').addClass('highlight-wrap')
+          $(e).after($wrap)
+          $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function (e) {
+            var code = $(this).parent().find(".code")[0].innerText
+            
+            var ta = document.createElement('textarea')
+            document.body.appendChild(ta)
+            ta.style.position = 'absolute'
+            ta.style.top = '0px'
+            ta.style.left = '0px'
+            ta.value = code
+            ta.select()
+            ta.focus()
+            var result = document.execCommand('copy')
+            document.body.removeChild(ta)
+            
+              if(result)$(this).text('复制成功')
+              else $(this).text('复制失败')
+            
+            $(this).blur()
+          })).on('mouseleave', function (e) {
+            var $b = $(this).find('.copy-btn')
+            setTimeout(function () {
+              $b.text('复制')
+            }, 300)
+          }).append(e)
+        })
+      })
+    </script>
+  
+  
+  /**
+  * 感谢您复制代码，使用代码请注明引用出处
+  * kajweb @ https://blog.iwwee.com
+  */
 </body>
 </html>

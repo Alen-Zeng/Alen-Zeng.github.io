@@ -378,5 +378,352 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
 
+
+<!-- 返回顶部 -->
+<div id="go-top"></div>
+<style type="text/css">
+#go-top {
+ width:40px;height:36px;
+ background-color:#7b7b7b;
+ position:relative;
+ border-radius:2px;
+ position:fixed;right:10px;bottom:60px;
+ cursor:pointer;display:none;
+}
+#go-top:after {
+ content:" ";
+ position:absolute;left:14px;top:14px;
+ border-top:2px solid #fff;border-right:2px solid #fff;
+ width:12px;height:12px;
+ transform:rotate(-45deg);
+}
+#go-top:hover {
+ background-color:#565656;
+}
+</style>
+<script>
+$(function () {
+  var top=$("#go-top");
+  $(window).scroll(function () {
+    ($(window).scrollTop() > 300) ? top.show(300) : top.hide(200);
+    $("#go-top").click(function () {
+      $('body,html').animate({scrollTop:0});
+      return false();
+    })
+  });
+});
+</script>
+
+  
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-hello-world" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Hello World
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/20220806/hello-world/" class="article-date">
+	  <time datetime="2022-08-06T03:46:16.743Z" itemprop="datePublished">2022-08-06</time>
+	</a>
+</span>
+        
+        
+
+        
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/20220806/hello-world/#comments" class="article-comment-link">评论</a></span>
+        
+	
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 75(字)</span>
+	
+	
+
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="https://chenmoshaoalen.github.io/20220806/hello-world/" title="Hello World" target="_blank" rel="external">https://chenmoshaoalen.github.io/20220806/hello-world/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong> 转载请注明出处！
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="test" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="/images/avatar.jpg" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="test" target="_blank"><span class="text-dark">Alen</span><small class="ml-1x"></small></a></h3>
+        <div>无冥冥之志者，无昭昭之明；无惛惛之事者，无赫赫之功。</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+  </article>
+  
+    
+  <section id="comments">
+  	
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    <li class="prev">
+      <a href="/20220806/article-title-test/" title="article title test"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+    </li>
+    
+    
+    
+  </ul>
+  
+  
+  
+  <div class="bar-right">
+    
+    <div class="share-component" data-sites="weibo,qq,wechat,google" data-mobile-sites="weibo,qq,wechat"></div>
+    
+  </div>
+  </div>
+</nav>
+  
+
+
+</main>
+
+  <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+	
+    <div class="copyright">
+    	
+        <div class="publishby">
+            <span id="busuanzi_container_site_pv">
+                clicks: <span id="busuanzi_value_site_pv" style="font-family:Courier"></span> &nbsp; &nbsp;
+                visitors:<span id="busuanzi_value_site_uv" style="font-family:Courier"></span>
+            </span>
+        </div>
+        <!-- <div class="publishby">
+        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div> -->
+    </div>
+</footer>
+  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+
+<script src="/js/plugin.min.js"></script>
+
+
+<script src="/js/application.js"></script>
+
+
+    <script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+
+
+
+
+   
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+   
+
+
+
+
+
+
+
+<!-- 返回顶部 -->
+<div id="go-top"></div>
+<style type="text/css">
+#go-top {
+ width:40px;height:36px;
+ background-color:#7b7b7b;
+ position:relative;
+ border-radius:2px;
+ position:fixed;right:10px;bottom:60px;
+ cursor:pointer;display:none;
+}
+#go-top:after {
+ content:" ";
+ position:absolute;left:14px;top:14px;
+ border-top:2px solid #fff;border-right:2px solid #fff;
+ width:12px;height:12px;
+ transform:rotate(-45deg);
+}
+#go-top:hover {
+ background-color:#565656;
+}
+</style>
+<script>
+$(function () {
+  var top=$("#go-top");
+  $(window).scroll(function () {
+    ($(window).scrollTop() > 300) ? top.show(300) : top.hide(200);
+    $("#go-top").click(function () {
+      $('body,html').animate({scrollTop:0});
+      return false();
+    })
+  });
+});
+</script>
+
+  
+    <style>
+      .copy-btn {
+        display: inline-block;
+        padding: 6px 12px;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 20px;
+        color: #333;
+        white-space: nowrap;
+        vertical-align: middle;
+        cursor: pointer;
+        background-color: #eee;
+        background-image: linear-gradient(#fcfcfc, #eee);
+        border: 1px solid #d5d5d5;
+        border-radius: 3px;
+        user-select: none;
+        outline: 0;
+      }
+  
+      .highlight-wrap .copy-btn {
+        transition: opacity .3s ease-in-out;
+        opacity: 0;
+        padding: 2px 6px;
+        position: absolute;
+        right: 4px;
+        top: 8px;
+        z-index: 2;
+      }
+  
+      .highlight-wrap:hover .copy-btn,
+          .highlight-wrap .copy-btn:focus {
+        opacity: 1
+      }
+  
+      .highlight-wrap {
+        position: relative;
+      }
+    </style>
+    
+    <script>
+      addLoadEvent(()=>{
+        $('.highlight').each(function (i, e) {
+          var $wrap = $('<div>').addClass('highlight-wrap')
+          $(e).after($wrap)
+          $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function (e) {
+            var code = $(this).parent().find(".code")[0].innerText
+            
+            var ta = document.createElement('textarea')
+            document.body.appendChild(ta)
+            ta.style.position = 'absolute'
+            ta.style.top = '0px'
+            ta.style.left = '0px'
+            ta.value = code
+            ta.select()
+            ta.focus()
+            var result = document.execCommand('copy')
+            document.body.removeChild(ta)
+            
+              if(result)$(this).text('复制成功')
+              else $(this).text('复制失败')
+            
+            $(this).blur()
+          })).on('mouseleave', function (e) {
+            var $b = $(this).find('.copy-btn')
+            setTimeout(function () {
+              $b.text('复制')
+            }, 300)
+          }).append(e)
+        })
+      })
+    </script>
+  
+  
+  /**
+  * 感谢您复制代码，使用代码请注明引用出处
+  * kajweb @ https://blog.iwwee.com
+  */
 </body>
 </html>
