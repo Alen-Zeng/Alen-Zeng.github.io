@@ -20,16 +20,7 @@
   </url>
   
   <url>
-    <loc>https://chenmoshaoalen.github.io/20220805/test/</loc>
-    
-    <lastmod>2022-08-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://chenmoshaoalen.github.io/tags/index.html</loc>
+    <loc>https://chenmoshaoalen.github.io/repository/index.html</loc>
     
     <lastmod>2022-08-06</lastmod>
     
@@ -38,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://chenmoshaoalen.github.io/repository/index.html</loc>
+    <loc>https://chenmoshaoalen.github.io/tags/index.html</loc>
     
     <lastmod>2022-08-06</lastmod>
     
@@ -73,15 +64,6 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://chenmoshaoalen.github.io/20220806/hello-world/</loc>
-    
-    <lastmod>2022-08-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   <url>
     <loc>https://chenmoshaoalen.github.io/</loc>
@@ -91,20 +73,6 @@
   </url>
 
   
-  <url>
-    <loc>https://chenmoshaoalen.github.io/tags/test/</loc>
-    <lastmod>2022-08-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
-  
-  <url>
-    <loc>https://chenmoshaoalen.github.io/categories/test/</loc>
-    <lastmod>2022-08-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
   
 </urlset>
