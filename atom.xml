@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Alen&#39;s Blog</title>
+  
+  
+  <link href="https://chenmoshaoalen.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://chenmoshaoalen.github.io/"/>
+  <updated>2022-08-07T16:30:36.080Z</updated>
+  <id>https://chenmoshaoalen.github.io/</id>
+  
+  <author>
+    <name>Alen</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>First-Blog</title>
+    <link href="https://chenmoshaoalen.github.io/20220808/First-Blog/"/>
+    <id>https://chenmoshaoalen.github.io/20220808/First-Blog/</id>
+    <published>2022-08-07T16:29:01.000Z</published>
+    <updated>2022-08-07T16:30:36.080Z</updated>
+    
+    <content type="html"><![CDATA[<p>摘要： 第一篇博客<span id="more"></span></p><h3 id="这里是Alen，这是我的第一篇博客"><a href="#这里是Alen，这是我的第一篇博客" class="headerlink" title="这里是Alen，这是我的第一篇博客"></a>这里是Alen，这是我的第一篇博客</h3>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;摘要： 第一篇博客</summary>
+    
+    
+    
+    <category term="未分类" scheme="https://chenmoshaoalen.github.io/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
+    
+    
+  </entry>
+  
+</feed>
