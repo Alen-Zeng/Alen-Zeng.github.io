@@ -153,7 +153,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace,monospace;
+  font-family: Microsoft YaHei,monospace;
   font-size: 1em;
 }
 
@@ -3261,7 +3261,7 @@ body {
 body {
   padding-right: 0 !important;
   font-family: "PingHei","PingFang SC",Helvetica Neue,"Work Sans","Hiragino Sans GB","Microsoft YaHei",SimSun,sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.57143;
   color: #333333;
   background-color: #fff;
@@ -5550,8 +5550,8 @@ code {
   text-shadow: 0 1px #fff;
   padding: 0.2em 0.4em;
   margin: 0 0.3em;
-  color: #555;
-  background: #eee;
+  color: rgb(10, 10, 10);
+  background: rgba(27,31,35,0.05);
   border-radius: 3px;
   font-size: 85%;
 }
