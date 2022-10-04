@@ -6,7 +6,7 @@
   <link href="https://chenmoshaoalen.github.io/atom.xml" rel="self"/>
   
   <link href="https://chenmoshaoalen.github.io/"/>
-  <updated>2022-10-04T06:10:34.842Z</updated>
+  <updated>2022-10-04T06:13:15.964Z</updated>
   <id>https://chenmoshaoalen.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://chenmoshaoalen.github.io/20221004/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E6%89%93%E5%BC%80Github/"/>
     <id>https://chenmoshaoalen.github.io/20221004/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E6%89%93%E5%BC%80Github/</id>
     <published>2022-10-04T05:27:10.000Z</published>
-    <updated>2022-10-04T06:10:34.842Z</updated>
+    <updated>2022-10-04T06:13:15.964Z</updated>
     
-    <content type="html"><![CDATA[<p>摘要：关于在国内如何快速打开github <span id="more"></span></p><br><h1 id="第一步：查询github-com目前的ip地址"><a href="#第一步：查询github-com目前的ip地址" class="headerlink" title="第一步：查询github.com目前的ip地址"></a>第一步：查询<code>github.com</code>目前的ip地址</h1><p>打开<a href="https://www.ipaddress.com/">ipaddress.com</a>，然后在搜索栏搜索<code>github.com</code>（或者直接点击这个链接<a href="https://github.com.ipaddress.com/">“github.com”ip地址查询</a>），找到红色框圈住的就是目前的ip地址。</p><p><img src="/20221004/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E6%89%93%E5%BC%80Github/githubip.png" alt="GithubIP"></p><p>可以看到，在我写这篇博客的时候，<code>github.com</code>的ip为:140.82.114.3</p><br><h1 id="第二步：修改hosts文件"><a href="#第二步：修改hosts文件" class="headerlink" title="第二步：修改hosts文件"></a>第二步：修改hosts文件</h1><p>打开<code>Windows Powershell(管理员）</code>，输入notepad回车打开记事本，在记事本里面打开这个文件夹：<code>C:\Windows\System32\drivers\etc</code>，打开里面的<code>hosts</code>文件（不带文件类型的那一个），文件末尾追加这一行：</p><figure class="highlight accesslog"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">140.82.114.3</span>       github.com</span><br></pre></td></tr></table></figure><p>也就是输入查到的ip和网址，中间用空格隔开，保存。<br>以后如果打不开了，只要重新查下，更改这个ip就可以了。</p><br><h1 id="第三步：刷新DNS"><a href="#第三步：刷新DNS" class="headerlink" title="第三步：刷新DNS"></a>第三步：刷新DNS</h1><p>打开<code>cmd</code>，输入：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ipconfig/flushdns</span><br></pre></td></tr></table></figure><p>回车即可。</p>]]></content>
+    <content type="html"><![CDATA[<p>摘要：关于在国内如何快速打开github <span id="more"></span></p><br><h1 id="第一步：查询github-com目前的ip地址"><a href="#第一步：查询github-com目前的ip地址" class="headerlink" title="第一步：查询github.com目前的ip地址"></a>第一步：查询<code>github.com</code>目前的ip地址</h1><p>打开<a href="https://www.ipaddress.com/">ipaddress.com</a>，然后在搜索栏搜索<code>github.com</code>，找到红色框圈住的就是目前的ip地址。</p><p><img src="/20221004/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E6%89%93%E5%BC%80Github/githubip.png" alt="GithubIP"></p><p>可以看到，在我写这篇博客的时候，<code>github.com</code>的ip为:140.82.114.3</p><br><h1 id="第二步：修改hosts文件"><a href="#第二步：修改hosts文件" class="headerlink" title="第二步：修改hosts文件"></a>第二步：修改hosts文件</h1><p>打开<code>Windows Powershell(管理员）</code>，输入notepad回车打开记事本，在记事本里面打开这个文件夹：<code>C:\Windows\System32\drivers\etc</code>，打开里面的<code>hosts</code>文件（不带文件类型的那一个），文件末尾追加这一行：</p><figure class="highlight accesslog"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">140.82.114.3</span>       github.com</span><br></pre></td></tr></table></figure><p>也就是输入查到的ip和网址，中间用空格隔开，保存。<br>以后如果打不开了，只要重新查下，更改这个ip就可以了。</p><br><h1 id="第三步：刷新DNS"><a href="#第三步：刷新DNS" class="headerlink" title="第三步：刷新DNS"></a>第三步：刷新DNS</h1><p>打开<code>cmd</code>，输入：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ipconfig/flushdns</span><br></pre></td></tr></table></figure><p>回车即可。</p>]]></content>
     
     
     <summary type="html">&lt;p&gt;摘要：关于在国内如何快速打开github</summary>
