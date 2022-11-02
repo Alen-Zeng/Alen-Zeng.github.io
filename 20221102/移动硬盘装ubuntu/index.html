@@ -21,18 +21,23 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>Alen&#39;s Blog</title>
-  <meta name="description" content="Alen的技术博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Alen&#39;s Blog">
-<meta property="og:url" content="https://chenmoshaoalen.github.io/index.html">
+  <title>移动硬盘装ubuntu | Alen&#39;s Blog</title>
+  <meta name="description" content="摘要：关于如何在移动硬盘上装ubuntu的完全教程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="移动硬盘装ubuntu">
+<meta property="og:url" content="https://chenmoshaoalen.github.io/20221102/%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E8%A3%85ubuntu/index.html">
 <meta property="og:site_name" content="Alen&#39;s Blog">
-<meta property="og:description" content="Alen的技术博客">
+<meta property="og:description" content="摘要：关于如何在移动硬盘上装ubuntu的完全教程">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://chenmoshaoalen.github.io/20221102/%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E8%A3%85ubuntu/diskformat.png">
+<meta property="og:image" content="https://chenmoshaoalen.github.io/20221102/%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E8%A3%85ubuntu/isowritten.PNG">
+<meta property="article:published_time" content="2022-11-02T13:59:30.000Z">
+<meta property="article:modified_time" content="2022-11-02T14:44:04.766Z">
 <meta property="article:author" content="Alen">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://chenmoshaoalen.github.io/20221102/%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E8%A3%85ubuntu/diskformat.png">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://chenmoshaoalen.github.io/index.html">
+  <link rel="canonical" href="https://chenmoshaoalen.github.io/20221102/%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E8%A3%85ubuntu/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Alen&#39;s Blog" type="application/atom+xml">
   
@@ -276,27 +281,32 @@
 </aside>
 
   
-  <main class="main" role="main">
   
-  <div class="content article-list">
+  <aside class="sidebar sidebar-toc collapse " id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <nav id="toc" class="article-toc">
+      <h3 class="toc-title">文章目录</h3>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%87%86%E5%A4%87%E6%9D%90%E6%96%99"><span class="toc-text">准备材料</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#1-%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%B9%B2%E5%87%80U%E7%9B%98%E5%92%8C%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98"><span class="toc-text">1.格式化干净U盘和移动硬盘</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-%E5%86%99%E5%85%A5ubuntu%E9%95%9C%E5%83%8F%E5%88%B0U%E7%9B%98"><span class="toc-text">2.写入ubuntu镜像到U盘</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-%E8%BF%9B%E5%85%A5%E7%94%B5%E8%84%91%E7%9A%84boot%EF%BC%8C%E6%94%B9%E4%B8%BA%E4%BB%8EU%E7%9B%98%E5%90%AF%E5%8A%A8"><span class="toc-text">3.进入电脑的boot，改为从U盘启动</span></a></li></ol>
+    </nav>
+  </div>
+</aside>
+
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-移动硬盘装ubuntu" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
-      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="article-header">
-    
+    <div class="article-header">
+      
+        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/20221102/%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E8%A3%85ubuntu/">移动硬盘装ubuntu</a>
+    <h1 class="article-title" itemprop="name">
+      移动硬盘装ubuntu
     </h1>
   
 
-  </div>
-  
-  <div class="article-entry text-muted" itemprop="description">
-    <p>摘要：关于如何在移动硬盘上装ubuntu的完全教程
-  </div>
-  
-  <p class="article-meta">
-    <span class="article-date">
+      
+      <div class="article-meta">
+        <span class="article-date">
     <i class="icon icon-calendar"></i>
 	<a href="/20221102/%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E8%A3%85ubuntu/" class="article-date">
 		发布于 <time datetime="2022-11-02T13:59:30.000Z" itemprop="datePublished">2022-11-02</time>
@@ -309,182 +319,137 @@
 		更新于 <time datetime="2022-11-02T14:44:04.766Z" itemprop="dateUpdated">2022-11-02</time>
 	</a>
 </span>
-    
+        
   <span class="article-category">
     <i class="icon icon-folder"></i>
     <a class="article-category-link" href="/categories/Linux/">Linux</a>
   </span>
 
-    
+        
 
-    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/20221102/%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E8%A3%85ubuntu/#comments" class="article-comment-link">评论</a></span>
-    
+        
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/20221102/%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E8%A3%85ubuntu/#comments" class="article-comment-link">评论</a></span>
+        
 	
 		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 448(字)</span>
 	
 	
 
-  </p>
-</article>
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <p>摘要：关于如何在移动硬盘上装ubuntu的完全教程 <span id="more"></span></p>
+<br>
 
-    
-      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="article-header">
-    
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/20221004/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E6%89%93%E5%BC%80Github/">如何快速打开Github</a>
-    </h1>
-  
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>由于要使用ubuntu进行开发，在衡量装虚拟机、双系统和移动硬盘装系统三个选择，以及实验室师兄师姐普遍采用移动硬盘的方案，故选择移动硬盘装系统的方案。在实验室师兄的指导下马上就装好了系统，现将装系统过程记录，以备后用。</p>
+<h1 id="准备材料"><a href="#准备材料" class="headerlink" title="准备材料"></a>准备材料</h1><ul>
+<li>一块全新移动硬盘（建议可以200G以上）</li>
+<li>一个4G以上的U盘</li>
+<li>一台电脑</li>
+<li>Rufus软件</li>
+<li>ubuntu 20.04映像</li>
+</ul>
+<br>
 
+<h1 id="1-格式化干净U盘和移动硬盘"><a href="#1-格式化干净U盘和移动硬盘" class="headerlink" title="1.格式化干净U盘和移动硬盘"></a>1.格式化干净U盘和移动硬盘</h1><p>关于这个格式化，有待填坑，装系统时是让实验室的同学（已经装有ubuntu）帮我把移动硬盘和U盘格式化掉的，格式化成ext4格式，这个格式只有linux可以识别。在windows下如何格式化成这个格式我还没有探索过。在格式化过程中，为了将disk彻底格式化干净，可以通过格式化后再次创建分区，卸载分区，再次格式化的方式。<br><img src="/20221102/%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E8%A3%85ubuntu/diskformat.png" alt="isowritten"></p>
+<h1 id="2-写入ubuntu镜像到U盘"><a href="#2-写入ubuntu镜像到U盘" class="headerlink" title="2.写入ubuntu镜像到U盘"></a>2.写入ubuntu镜像到U盘</h1><p>这里要用到Rufus,下载后双击打开，如图：</p>
+<p><img src="/20221102/%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E8%A3%85ubuntu/isowritten.PNG" alt="isowritten"></p>
+<p>参数配置如下：</p>
+<ul>
+<li>设备：也就是选择你要写入映像的U盘了，这个U盘后面会用来安装系统到移动硬盘中</li>
+<li>引导类型选择：选择你下载好的ubuntu映像</li>
+<li>分区类型：如果是比较新的电脑、游戏本之类的，选择GPT；否则选另外一个</li>
+</ul>
+<p>其他参数默认即可，点击开始。写入的过程会比较缓慢，取决于你的U盘。</p>
+<h1 id="3-进入电脑的boot，改为从U盘启动"><a href="#3-进入电脑的boot，改为从U盘启动" class="headerlink" title="3.进入电脑的boot，改为从U盘启动"></a>3.进入电脑的boot，改为从U盘启动</h1><p>（待更新）</p>
+
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="https://chenmoshaoalen.github.io/20221102/%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E8%A3%85ubuntu/" title="移动硬盘装ubuntu" target="_blank" rel="external">https://chenmoshaoalen.github.io/20221102/移动硬盘装ubuntu/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong> 转载请注明出处！
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="/images/avatar.jpg" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="" target="_blank"><span class="text-dark">Alen</span><small class="ml-1x"></small></a></h3>
+        <div>无冥冥之志者，无昭昭之明；无惛惛之事者，无赫赫之功。</div>
+      </div>
+    </figure>
   </div>
+</div>
+
+
+    </div>
+  </article>
   
-  <div class="article-entry text-muted" itemprop="description">
-    <p>摘要：关于在国内如何快速打开github
-  </div>
+    
+  <section id="comments">
+  	
+  </section>
+
+
   
-  <p class="article-meta">
-    <span class="article-date">
-    <i class="icon icon-calendar"></i>
-	<a href="/20221004/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E6%89%93%E5%BC%80Github/" class="article-date">
-		发布于 <time datetime="2022-10-04T05:27:10.000Z" itemprop="datePublished">2022-10-04</time>
-	</a>
-</span>
+</div>
 
-<span class="article-date">
-    <i class="icon icon-calendar-check"></i>
-	<a href="/20221004/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E6%89%93%E5%BC%80Github/" class="article-date">
-		更新于 <time datetime="2022-10-04T06:13:15.964Z" itemprop="dateUpdated">2022-10-04</time>
-	</a>
-</span>
-    
-  <span class="article-category">
-    <i class="icon icon-folder"></i>
-    <a class="article-category-link" href="/categories/%E6%97%A5%E5%B8%B8%E5%AD%A6%E4%B9%A0/">日常学习</a>
-  </span>
-
-    
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>
-	<a class="article-tag-link-link" href="/tags/Github/" rel="tag">Github</a>
-  </span>
-
-
-    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/20221004/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E6%89%93%E5%BC%80Github/#comments" class="article-comment-link">评论</a></span>
-    
-	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 212(字)</span>
-	
-	
-
-  </p>
-</article>
-
-    
-      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="article-header">
-    
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/20220810/Markdown%E8%AF%AD%E6%B3%95/">Markdown语法</a>
-    </h1>
+  <ul class="pager pull-left">
+    
+    
+    <li class="next">
+      <a href="/20221004/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E6%89%93%E5%BC%80Github/" title="如何快速打开Github"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+    <li class="toggle-toc">
+      <a class="toggle-btn   collapsed  " data-toggle="collapse" href="#collapseToc" aria-expanded="false" title="文章目录" role="button">    <span>[&nbsp;</span><span>文章目录</span>
+        <i class="text-collapsed icon icon-anchor"></i>
+        <i class="text-in icon icon-close"></i>
+        <span>]</span>
+      </a>
+    </li>
+    
+  </ul>
   
-
-  </div>
   
-  <div class="article-entry text-muted" itemprop="description">
-    <p>摘要：Markdown语法的使用
-  </div>
   
-  <p class="article-meta">
-    <span class="article-date">
-    <i class="icon icon-calendar"></i>
-	<a href="/20220810/Markdown%E8%AF%AD%E6%B3%95/" class="article-date">
-		发布于 <time datetime="2022-08-10T08:41:40.000Z" itemprop="datePublished">2022-08-10</time>
-	</a>
-</span>
-
-<span class="article-date">
-    <i class="icon icon-calendar-check"></i>
-	<a href="/20220810/Markdown%E8%AF%AD%E6%B3%95/" class="article-date">
-		更新于 <time datetime="2022-09-02T16:14:42.984Z" itemprop="dateUpdated">2022-09-03</time>
-	</a>
-</span>
-    
-  <span class="article-category">
-    <i class="icon icon-folder"></i>
-    <a class="article-category-link" href="/categories/%E6%97%A5%E5%B8%B8%E5%AD%A6%E4%B9%A0/">日常学习</a>
-  </span>
-
-    
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>
-	<a class="article-tag-link-link" href="/tags/Markdown/" rel="tag">Markdown</a>
-  </span>
-
-
-    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/20220810/Markdown%E8%AF%AD%E6%B3%95/#comments" class="article-comment-link">评论</a></span>
-    
-	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1.2k(字)</span>
-	
-	
-
-  </p>
-</article>
-
-    
-      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="article-header">
-    
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/20220807/First-Blog/">First-Blog</a>
-    </h1>
-  
-
-  </div>
-  
-  <div class="article-entry text-muted" itemprop="description">
-    <p>摘要： 第一篇博客
-  </div>
-  
-  <p class="article-meta">
-    <span class="article-date">
-    <i class="icon icon-calendar"></i>
-	<a href="/20220807/First-Blog/" class="article-date">
-		发布于 <time datetime="2022-08-07T12:29:01.000Z" itemprop="datePublished">2022-08-07</time>
-	</a>
-</span>
-
-<span class="article-date">
-    <i class="icon icon-calendar-check"></i>
-	<a href="/20220807/First-Blog/" class="article-date">
-		更新于 <time datetime="2022-08-10T16:04:56.849Z" itemprop="dateUpdated">2022-08-11</time>
-	</a>
-</span>
-    
-  <span class="article-category">
-    <i class="icon icon-folder"></i>
-    <a class="article-category-link" href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/">未分类</a>
-  </span>
-
-    
-
-    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/20220807/First-Blog/#comments" class="article-comment-link">评论</a></span>
-    
-	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 80(字)</span>
-	
-	
-
-  </p>
-</article>
-
+  <div class="bar-right">
     
   </div>
+  </div>
+</nav>
+  
 
-   
+
 </main>
 
   <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
@@ -583,6 +548,8 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
 
+
+   
 
 
   <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.3.5/dist/jquery.fancybox.min.js"></script>

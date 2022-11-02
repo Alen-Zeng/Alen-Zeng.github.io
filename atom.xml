@@ -6,7 +6,7 @@
   <link href="https://chenmoshaoalen.github.io/atom.xml" rel="self"/>
   
   <link href="https://chenmoshaoalen.github.io/"/>
-  <updated>2022-10-04T06:13:15.964Z</updated>
+  <updated>2022-11-02T14:44:04.766Z</updated>
   <id>https://chenmoshaoalen.github.io/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>移动硬盘装ubuntu</title>
+    <link href="https://chenmoshaoalen.github.io/20221102/%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E8%A3%85ubuntu/"/>
+    <id>https://chenmoshaoalen.github.io/20221102/%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E8%A3%85ubuntu/</id>
+    <published>2022-11-02T13:59:30.000Z</published>
+    <updated>2022-11-02T14:44:04.766Z</updated>
+    
+    <content type="html"><![CDATA[<p>摘要：关于如何在移动硬盘上装ubuntu的完全教程 <span id="more"></span></p><br><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>由于要使用ubuntu进行开发，在衡量装虚拟机、双系统和移动硬盘装系统三个选择，以及实验室师兄师姐普遍采用移动硬盘的方案，故选择移动硬盘装系统的方案。在实验室师兄的指导下马上就装好了系统，现将装系统过程记录，以备后用。</p><h1 id="准备材料"><a href="#准备材料" class="headerlink" title="准备材料"></a>准备材料</h1><ul><li>一块全新移动硬盘（建议可以200G以上）</li><li>一个4G以上的U盘</li><li>一台电脑</li><li>Rufus软件</li><li>ubuntu 20.04映像</li></ul><br><h1 id="1-格式化干净U盘和移动硬盘"><a href="#1-格式化干净U盘和移动硬盘" class="headerlink" title="1.格式化干净U盘和移动硬盘"></a>1.格式化干净U盘和移动硬盘</h1><p>关于这个格式化，有待填坑，装系统时是让实验室的同学（已经装有ubuntu）帮我把移动硬盘和U盘格式化掉的，格式化成ext4格式，这个格式只有linux可以识别。在windows下如何格式化成这个格式我还没有探索过。在格式化过程中，为了将disk彻底格式化干净，可以通过格式化后再次创建分区，卸载分区，再次格式化的方式。<br><img src="/20221102/%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E8%A3%85ubuntu/diskformat.png" alt="isowritten"></p><h1 id="2-写入ubuntu镜像到U盘"><a href="#2-写入ubuntu镜像到U盘" class="headerlink" title="2.写入ubuntu镜像到U盘"></a>2.写入ubuntu镜像到U盘</h1><p>这里要用到Rufus,下载后双击打开，如图：</p><p><img src="/20221102/%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E8%A3%85ubuntu/isowritten.PNG" alt="isowritten"></p><p>参数配置如下：</p><ul><li>设备：也就是选择你要写入映像的U盘了，这个U盘后面会用来安装系统到移动硬盘中</li><li>引导类型选择：选择你下载好的ubuntu映像</li><li>分区类型：如果是比较新的电脑、游戏本之类的，选择GPT；否则选另外一个</li></ul><p>其他参数默认即可，点击开始。写入的过程会比较缓慢，取决于你的U盘。</p><h1 id="3-进入电脑的boot，改为从U盘启动"><a href="#3-进入电脑的boot，改为从U盘启动" class="headerlink" title="3.进入电脑的boot，改为从U盘启动"></a>3.进入电脑的boot，改为从U盘启动</h1><p>（待更新）</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;摘要：关于如何在移动硬盘上装ubuntu的完全教程</summary>
+    
+    
+    
+    <category term="Linux" scheme="https://chenmoshaoalen.github.io/categories/Linux/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>如何快速打开Github</title>

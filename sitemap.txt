@@ -1,3 +1,4 @@
+https://chenmoshaoalen.github.io/20221102/%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E8%A3%85ubuntu/
 https://chenmoshaoalen.github.io/20221004/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E6%89%93%E5%BC%80Github/
 https://chenmoshaoalen.github.io/20220810/Markdown%E8%AF%AD%E6%B3%95/
 https://chenmoshaoalen.github.io/20220807/First-Blog/
@@ -9,3 +10,4 @@ https://chenmoshaoalen.github.io/tags/Markdown/
 https://chenmoshaoalen.github.io/tags/Github/
 https://chenmoshaoalen.github.io/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/
 https://chenmoshaoalen.github.io/categories/%E6%97%A5%E5%B8%B8%E5%AD%A6%E4%B9%A0/
+https://chenmoshaoalen.github.io/categories/Linux/
