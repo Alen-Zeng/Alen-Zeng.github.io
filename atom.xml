@@ -6,7 +6,7 @@
   <link href="https://chenmoshaoalen.github.io/atom.xml" rel="self"/>
   
   <link href="https://chenmoshaoalen.github.io/"/>
-  <updated>2022-11-03T11:08:12.283Z</updated>
+  <updated>2022-11-03T11:18:49.177Z</updated>
   <id>https://chenmoshaoalen.github.io/</id>
   
   <author>
@@ -17,21 +17,60 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>移动硬盘装ubuntu</title>
-    <link href="https://chenmoshaoalen.github.io/20221102/%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E8%A3%85ubuntu/"/>
-    <id>https://chenmoshaoalen.github.io/20221102/%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E8%A3%85ubuntu/</id>
-    <published>2022-11-02T13:59:30.000Z</published>
-    <updated>2022-11-03T11:08:12.283Z</updated>
+    <title>Ubuntu命令</title>
+    <link href="https://chenmoshaoalen.github.io/20221103/Ubuntu%E5%91%BD%E4%BB%A4/"/>
+    <id>https://chenmoshaoalen.github.io/20221103/Ubuntu%E5%91%BD%E4%BB%A4/</id>
+    <published>2022-11-03T11:12:10.000Z</published>
+    <updated>2022-11-03T11:18:49.177Z</updated>
     
-    <content type="html"><![CDATA[<p>摘要：关于如何在移动硬盘上装ubuntu的完全教程 <span id="more"></span></p><br><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>由于要使用ubuntu进行开发，在衡量装虚拟机、双系统和移动硬盘装系统三个选择，以及实验室师兄师姐普遍采用移动硬盘的方案，故选择移动硬盘装系统的方案。在实验室师兄的指导下马上就装好了系统，现将装系统过程记录，以备后用。</p><h1 id="准备材料"><a href="#准备材料" class="headerlink" title="准备材料"></a>准备材料</h1><ul><li>一块全新移动硬盘（建议可以200G以上，建议使用固态）</li><li>一个4G以上的U盘</li><li>一台电脑</li><li>Rufus软件</li><li>ubuntu 20.04映像</li></ul><br><h1 id="1-格式化干净U盘和移动硬盘"><a href="#1-格式化干净U盘和移动硬盘" class="headerlink" title="1.格式化干净U盘和移动硬盘"></a>1.格式化干净U盘和移动硬盘</h1><p>关于这个格式化，有待填坑，装系统时是让实验室的同学（已经装有ubuntu）帮我把移动硬盘和U盘格式化掉的，格式化成ext4格式，这个格式只有linux可以识别。在windows下如何格式化成这个格式我还没有探索过。在格式化过程中，为了将disk彻底格式化干净，可以通过格式化后再次创建分区，卸载分区，再次格式化的方式。<br><img src="/20221102/%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E8%A3%85ubuntu/diskformat.png" alt="格式化"></p><h1 id="2-写入ubuntu镜像到U盘"><a href="#2-写入ubuntu镜像到U盘" class="headerlink" title="2.写入ubuntu镜像到U盘"></a>2.写入ubuntu镜像到U盘</h1><p>这里要用到Rufus,下载后双击打开，如图：</p><p><img src="/20221102/%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E8%A3%85ubuntu/isowritten.PNG" alt="写入Ubuntu映像"></p><p>参数配置如下：</p><ul><li>设备：也就是选择你要写入映像的U盘了，这个U盘后面会用来安装系统到移动硬盘中</li><li>引导类型选择：选择你下载好的ubuntu映像</li><li>分区类型：如果是比较新的电脑、游戏本之类的，选择GPT；否则选另外一个</li></ul><p>其他参数默认即可，点击开始。写入的过程会比较缓慢，取决于你的U盘。</p><h1 id="3-进入电脑的BIOS，改为从U盘启动"><a href="#3-进入电脑的BIOS，改为从U盘启动" class="headerlink" title="3.进入电脑的BIOS，改为从U盘启动"></a>3.进入电脑的BIOS，改为从U盘启动</h1><p>开机狂按某个键进入BIOS，后首先将安全启动关闭，否则电脑只会从系统盘启动。<br><img src="/20221102/%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E8%A3%85ubuntu/turnoffsafestart.jpg" alt="关闭安全启动"><br>然后将U盘的优先级调到最高，重启，就会从U盘启动。</p><p>进BIOS这一步每一台电脑的操作会不一样，我的拯救者R7000P是按F2，建议google。</p><h1 id="4-安装Ubuntu并配置"><a href="#4-安装Ubuntu并配置" class="headerlink" title="4. 安装Ubuntu并配置"></a>4. 安装Ubuntu并配置</h1><p>从U盘启动，然后会到一个黑色的引导界面，用方向键选择Ubuntu后回车，等待自动检查完毕后，就会进入ubuntu的安装界面。</p><ul><li>语言：推荐选英文，但是新手还是选中文吧hhh。</li><li>键盘布局：默认即可</li><li>无线网络：不推荐连接，因为Ubuntu20.04的系统其实是相对稳定的，联网后系统会自动更新一些东西。</li><li>选<code>最小安装</code></li><li>安装类型：！！注意这里一定要选<code>其他选项</code>，这样才能把系统装到移动硬盘中。</li><li>分区：这里比较重要，见下面的讲解</li></ul><h3 id="4-1-分区配置"><a href="#4-1-分区配置" class="headerlink" title="4.1 分区配置"></a>4.1 分区配置</h3><p>这里的分区配置基于学长的建议与我的500G移动硬盘，如果有个人习惯或者更好的分配方法可以自行分配。</p><p>（待更新）</p>]]></content>
+    <content type="html"><![CDATA[<p>摘要： <code>&lt;!-- more --&gt;</code></p><br><ul><li><p>点击tab可以自动补全一些东西，比如命令、文件名</p></li><li><p>关机</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">poweroff</span></span><br></pre></td></tr></table></figure></li><li><p>安装deb文件</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dpkg -<span class="selector-tag">i</span> 你的deb包名</span><br></pre></td></tr></table></figure></li><li><p>强制删除文件</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">rm</span> <span class="operator">-f</span> 文件名</span><br></pre></td></tr></table></figure></li><li><p>强制删除文件夹</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">rm</span> -rf 文件夹名</span><br></pre></td></tr></table></figure></li><li><p>新建文件</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">touch</span> 文件名</span><br></pre></td></tr></table></figure></li><li><p>建立文件夹</p><figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir 文件夹名</span><br></pre></td></tr></table></figure></li></ul>]]></content>
     
     
-    <summary type="html">&lt;p&gt;摘要：关于如何在移动硬盘上装ubuntu的完全教程</summary>
+      
+      
+    <summary type="html">&lt;p&gt;摘要： &lt;code&gt;&amp;lt;!-- more --&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;br&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;点击tab可以自动补全一些东西，比如命令、文件名&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;关机&lt;/p&gt;
+&lt;figure class=&quot;highlight ebnf</summary>
+      
     
     
     
     <category term="Linux" scheme="https://chenmoshaoalen.github.io/categories/Linux/"/>
     
+    
+    <category term="Linux" scheme="https://chenmoshaoalen.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>移动硬盘装ubuntu</title>
+    <link href="https://chenmoshaoalen.github.io/20221102/%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E8%A3%85ubuntu/"/>
+    <id>https://chenmoshaoalen.github.io/20221102/%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E8%A3%85ubuntu/</id>
+    <published>2022-11-02T13:59:30.000Z</published>
+    <updated>2022-11-03T11:13:26.674Z</updated>
+    
+    <content type="html"><![CDATA[<p>摘要：关于如何在移动硬盘上装ubuntu的完全教程 <code>&lt;!-- more --&gt;</code></p><br><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>由于要使用ubuntu进行开发，在衡量装虚拟机、双系统和移动硬盘装系统三个选择，以及实验室师兄师姐普遍采用移动硬盘的方案，故选择移动硬盘装系统的方案。在实验室师兄的指导下马上就装好了系统，现将装系统过程记录，以备后用。</p><h1 id="准备材料"><a href="#准备材料" class="headerlink" title="准备材料"></a>准备材料</h1><ul><li>一块全新移动硬盘（建议可以200G以上，建议使用固态）</li><li>一个4G以上的U盘</li><li>一台电脑</li><li>Rufus软件</li><li>ubuntu 20.04映像</li></ul><br><h1 id="1-格式化干净U盘和移动硬盘"><a href="#1-格式化干净U盘和移动硬盘" class="headerlink" title="1.格式化干净U盘和移动硬盘"></a>1.格式化干净U盘和移动硬盘</h1><p>关于这个格式化，有待填坑，装系统时是让实验室的同学（已经装有ubuntu）帮我把移动硬盘和U盘格式化掉的，格式化成ext4格式，这个格式只有linux可以识别。在windows下如何格式化成这个格式我还没有探索过。在格式化过程中，为了将disk彻底格式化干净，可以通过格式化后再次创建分区，卸载分区，再次格式化的方式。<br><img src="/20221102/%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E8%A3%85ubuntu/diskformat.png" alt="格式化"></p><h1 id="2-写入ubuntu镜像到U盘"><a href="#2-写入ubuntu镜像到U盘" class="headerlink" title="2.写入ubuntu镜像到U盘"></a>2.写入ubuntu镜像到U盘</h1><p>这里要用到Rufus,下载后双击打开，如图：</p><p><img src="/20221102/%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E8%A3%85ubuntu/isowritten.PNG" alt="写入Ubuntu映像"></p><p>参数配置如下：</p><ul><li>设备：也就是选择你要写入映像的U盘了，这个U盘后面会用来安装系统到移动硬盘中</li><li>引导类型选择：选择你下载好的ubuntu映像</li><li>分区类型：如果是比较新的电脑、游戏本之类的，选择GPT；否则选另外一个</li></ul><p>其他参数默认即可，点击开始。写入的过程会比较缓慢，取决于你的U盘。</p><h1 id="3-进入电脑的BIOS，改为从U盘启动"><a href="#3-进入电脑的BIOS，改为从U盘启动" class="headerlink" title="3.进入电脑的BIOS，改为从U盘启动"></a>3.进入电脑的BIOS，改为从U盘启动</h1><p>开机狂按某个键进入BIOS，后首先将安全启动关闭，否则电脑只会从系统盘启动。<br><img src="/20221102/%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E8%A3%85ubuntu/turnoffsafestart.jpg" alt="关闭安全启动"><br>然后将U盘的优先级调到最高，重启，就会从U盘启动。</p><p>进BIOS这一步每一台电脑的操作会不一样，我的拯救者R7000P是按F2，建议google。</p><h1 id="4-安装Ubuntu并配置"><a href="#4-安装Ubuntu并配置" class="headerlink" title="4. 安装Ubuntu并配置"></a>4. 安装Ubuntu并配置</h1><p>从U盘启动，然后会到一个黑色的引导界面，用方向键选择Ubuntu后回车，等待自动检查完毕后，就会进入ubuntu的安装界面。</p><ul><li>语言：推荐选英文，但是新手还是选中文吧hhh。</li><li>键盘布局：默认即可</li><li>无线网络：不推荐连接，因为Ubuntu20.04的系统其实是相对稳定的，联网后系统会自动更新一些东西。</li><li>选 <code>最小安装</code></li><li>安装类型：！！注意这里一定要选 <code>其他选项</code>，这样才能把系统装到移动硬盘中。</li><li>分区：这里比较重要，见下面的讲解</li></ul><h3 id="4-1-分区配置"><a href="#4-1-分区配置" class="headerlink" title="4.1 分区配置"></a>4.1 分区配置</h3><p>这里的分区配置基于学长的建议与我的500G移动硬盘，如果有个人习惯或者更好的分配方法可以自行分配。</p><p>（待更新）</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;摘要：关于如何在移动硬盘上装ubuntu的完全教程 &lt;code&gt;&amp;lt;!-- more --&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;br&gt;
+
+&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;</summary>
+      
+    
+    
+    
+    <category term="Linux" scheme="https://chenmoshaoalen.github.io/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://chenmoshaoalen.github.io/tags/Linux/"/>
     
   </entry>
   
