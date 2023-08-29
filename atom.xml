@@ -6,7 +6,7 @@
   <link href="https://chenmoshaoalen.github.io/atom.xml" rel="self"/>
   
   <link href="https://chenmoshaoalen.github.io/"/>
-  <updated>2022-12-03T03:42:14.469Z</updated>
+  <updated>2023-08-29T11:58:50.943Z</updated>
   <id>https://chenmoshaoalen.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git标签</title>
+    <link href="https://chenmoshaoalen.github.io/20230829/git%E6%A0%87%E7%AD%BE/"/>
+    <id>https://chenmoshaoalen.github.io/20230829/git%E6%A0%87%E7%AD%BE/</id>
+    <published>2023-08-29T11:51:58.000Z</published>
+    <updated>2023-08-29T11:58:50.943Z</updated>
+    
+    <content type="html"><![CDATA[<p>摘要：git标签的使用 <span id="more"></span></p><br><h2 id="标签有什么用"><a href="#标签有什么用" class="headerlink" title="标签有什么用"></a>标签有什么用</h2><p>tag是git版本库的一个标记，指向某个commit的指针。</p><p>tag主要用于发布版本的管理，一个版本发布之后，我们可以为git打上 v.1.0.1 v.1.0.2 …这样的标签。</p><p>tag感觉跟branch有点相似，但是本质上和分工上是不同的：</p><p>tag 对应某次commit, 是一个点，是不可移动的。<br>branch 对应一系列commit，是很多点连成的一根线，有一个HEAD 指针，是可以依靠 HEAD 指针移动的。<br>所以，两者的区别决定了使用方式，改动代码用 branch ,不改动只查看用 tag。</p><p>tag 和 branch 的相互配合使用，有时候起到非常方便的效果，例如：已经发布了 v1.0 v2.0 v3.0 三个版本，这个时候，我突然想不改现有代码的前提下，在 v2.0 的基础上加个新功能，作为 v4.0 发布。就可以检出 v2.0 的代码作为一个 branch ，然后作为开发分支。</p><h2 id="查看标签"><a href="#查看标签" class="headerlink" title="查看标签"></a>查看标签</h2><h3 id="查看仓库中的所有标签"><a href="#查看仓库中的所有标签" class="headerlink" title="查看仓库中的所有标签"></a>查看仓库中的所有标签</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git tag</span><br></pre></td></tr></table></figure><h3 id="使用-l对标签查看进行过滤"><a href="#使用-l对标签查看进行过滤" class="headerlink" title="使用-l对标签查看进行过滤"></a>使用<code>-l</code>对标签查看进行过滤</h3><ul><li>查看以3结尾的标签</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git tag -l <span class="string">&quot;*3&quot;</span></span><br></pre></td></tr></table></figure><h2 id="创建标签"><a href="#创建标签" class="headerlink" title="创建标签"></a>创建标签</h2><h3 id="轻量标签"><a href="#轻量标签" class="headerlink" title="轻量标签"></a>轻量标签</h3><ul><li>给当前所处commit创建一个名字为TAG-NAME的标签</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git tag TAG-NAME</span><br></pre></td></tr></table></figure><blockquote><p>如何检出并切换commit？</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout COMMIT-ID</span><br></pre></td></tr></table></figure><p>即可切换到对应COMMIT-ID的commit</p></blockquote><ul><li>使用下列命令即可查看对应标签创建时的提交信息和对应的commit信息</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git show TAG-NAME</span><br></pre></td></tr></table></figure><h3 id="附注标签"><a href="#附注标签" class="headerlink" title="附注标签"></a>附注标签</h3><p>附注标签是存储在 Git 数据库中的一个完整对象，它们是可以被校验的，其中包含打标签者的名字、电子邮件地址、日期时间，此外还有一个标签信息，并且可以使用GNU Privacy Guard(GPG)签名并验证。通常会建议创建附注标签，这样你可以拥有以上所有信息。但是如果你只是想用一个临时的标签，或者因为某些原因不想要保存这些信息，那么也可以用轻量标签。</p><ul><li>未签名的附注标签</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git tag -a TAG-NAME -m TAG-MESSAGE</span><br></pre></td></tr></table></figure><h2 id="推送标签到远程服务器"><a href="#推送标签到远程服务器" class="headerlink" title="推送标签到远程服务器"></a>推送标签到远程服务器</h2><ul><li>推送指定标签到远程</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push REMOTE-NAME TAG-NAME</span><br></pre></td></tr></table></figure><ul><li>推送所有标签到远程</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push REMOTE-NAME --tags</span><br></pre></td></tr></table></figure><h2 id="删除标签"><a href="#删除标签" class="headerlink" title="删除标签"></a>删除标签</h2><ul><li>删除指定标签</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git tag -d TAG-NAME</span><br></pre></td></tr></table></figure><h3 id="将删除操作和远程同步"><a href="#将删除操作和远程同步" class="headerlink" title="将删除操作和远程同步"></a>将删除操作和远程同步</h3><ul><li>直接同步删除操作</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push REMOTED-NAME :refs/tags/TAG-NAME</span><br></pre></td></tr></table></figure><ul><li>直接删除远程标签</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push REMOTE-NAME -d TAG-NAME</span><br></pre></td></tr></table></figure><h2 id="检出标签"><a href="#检出标签" class="headerlink" title="检出标签"></a>检出标签</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout TAG-NAME</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;摘要：git标签的使用</summary>
+    
+    
+    
+    <category term="git" scheme="https://chenmoshaoalen.github.io/categories/git/"/>
+    
+    
+    <category term="git" scheme="https://chenmoshaoalen.github.io/tags/git/"/>
+    
+  </entry>
   
   <entry>
     <title>Ubuntu双系统安装</title>

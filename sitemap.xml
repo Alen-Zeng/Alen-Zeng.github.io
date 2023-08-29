@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://chenmoshaoalen.github.io/20230829/git%E6%A0%87%E7%AD%BE/</loc>
+    
+    <lastmod>2023-08-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://chenmoshaoalen.github.io/20220810/Markdown%E8%AF%AD%E6%B3%95/</loc>
     
     <lastmod>2023-08-29</lastmod>
@@ -112,6 +121,13 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://chenmoshaoalen.github.io/tags/git/</loc>
+    <lastmod>2023-08-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -130,6 +146,13 @@
   
   <url>
     <loc>https://chenmoshaoalen.github.io/categories/Linux/</loc>
+    <lastmod>2023-08-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://chenmoshaoalen.github.io/categories/git/</loc>
     <lastmod>2023-08-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

@@ -21,18 +21,21 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>分类: Linux | Alen&#39;s Blog</title>
-  <meta name="description" content="Alen的技术博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Alen&#39;s Blog">
-<meta property="og:url" content="https://chenmoshaoalen.github.io/categories/Linux/index.html">
+  <title>git标签 | Alen&#39;s Blog</title>
+  <meta name="description" content="摘要：git标签的使用">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git标签">
+<meta property="og:url" content="https://chenmoshaoalen.github.io/20230829/git%E6%A0%87%E7%AD%BE/index.html">
 <meta property="og:site_name" content="Alen&#39;s Blog">
-<meta property="og:description" content="Alen的技术博客">
+<meta property="og:description" content="摘要：git标签的使用">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-08-29T11:51:58.000Z">
+<meta property="article:modified_time" content="2023-08-29T11:58:50.943Z">
 <meta property="article:author" content="Alen">
+<meta property="article:tag" content="git">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://chenmoshaoalen.github.io/categories/Linux/index.html">
+  <link rel="canonical" href="https://chenmoshaoalen.github.io/20230829/git%E6%A0%87%E7%AD%BE/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Alen&#39;s Blog" type="application/atom+xml">
   
@@ -291,73 +294,220 @@
 </aside>
 
   
-  <main class="main" role="main">
-  <article class="content article article-categories article-type-list" itemscope="">
-    <header class="article-header">
-      <h1 itemprop="name" class="hidden-xs">分类: Linux</h1>
-      <p class="hidden-xs">共 3 篇文章</p>
-      <nav role="navigation" id="nav-main" class="okayNav">
-        <ul>
-          <li><a href="/categories">全部</a></li>
-          
-          <li><a href="/categories/未分类/">未分类</a></li>
-          
-          <li><a href="/categories/日常学习/">日常学习</a></li>
-          
-          <li><a href="/categories/Linux/">Linux</a></li>
-          
-          <li><a href="/categories/git/">git</a></li>
-          
-        </ul>
-      </nav>
-    </header>
-    <!-- /header -->
-    <div class="article-body">
-      <div class="panel panel-default b-no">
-    <div class="panel-heading" role="tab">
-        <h4 class="panel-title">
-            <a data-toggle="collapse" href="#collapseLinux" aria-expanded="true">
-              <i class="icon icon-folder text-active"></i><i class="icon icon-folder-open text"></i>
-              Linux
-            </a>
-            <small class="text-muted">(Total 3 articles)</small>
-        </h4>
+  
+  <aside class="sidebar sidebar-toc collapse " id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <nav id="toc" class="article-toc">
+      <h3 class="toc-title">文章目录</h3>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%87%E7%AD%BE%E6%9C%89%E4%BB%80%E4%B9%88%E7%94%A8"><span class="toc-text">标签有什么用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%A0%87%E7%AD%BE"><span class="toc-text">查看标签</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E4%BB%93%E5%BA%93%E4%B8%AD%E7%9A%84%E6%89%80%E6%9C%89%E6%A0%87%E7%AD%BE"><span class="toc-text">查看仓库中的所有标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8-l%E5%AF%B9%E6%A0%87%E7%AD%BE%E6%9F%A5%E7%9C%8B%E8%BF%9B%E8%A1%8C%E8%BF%87%E6%BB%A4"><span class="toc-text">使用-l对标签查看进行过滤</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%A0%87%E7%AD%BE"><span class="toc-text">创建标签</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BD%BB%E9%87%8F%E6%A0%87%E7%AD%BE"><span class="toc-text">轻量标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%99%84%E6%B3%A8%E6%A0%87%E7%AD%BE"><span class="toc-text">附注标签</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8E%A8%E9%80%81%E6%A0%87%E7%AD%BE%E5%88%B0%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-text">推送标签到远程服务器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E6%A0%87%E7%AD%BE"><span class="toc-text">删除标签</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%86%E5%88%A0%E9%99%A4%E6%93%8D%E4%BD%9C%E5%92%8C%E8%BF%9C%E7%A8%8B%E5%90%8C%E6%AD%A5"><span class="toc-text">将删除操作和远程同步</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A3%80%E5%87%BA%E6%A0%87%E7%AD%BE"><span class="toc-text">检出标签</span></a></li></ol>
+    </nav>
+  </div>
+</aside>
+
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-git标签" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
+  
+    <h1 class="article-title" itemprop="name">
+      git标签
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar"></i>
+	<a href="/20230829/git%E6%A0%87%E7%AD%BE/" class="article-date">
+		发布于 <time datetime="2023-08-29T11:51:58.000Z" itemprop="datePublished">2023-08-29</time>
+	</a>
+</span>
+
+<span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/20230829/git%E6%A0%87%E7%AD%BE/" class="article-date">
+		更新于 <time datetime="2023-08-29T11:58:50.943Z" itemprop="dateUpdated">2023-08-29</time>
+	</a>
+</span>
+        
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/git/">git</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link-link" href="/tags/git/" rel="tag">git</a>
+  </span>
+
+
+        
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/20230829/git%E6%A0%87%E7%AD%BE/#comments" class="article-comment-link">评论</a></span>
+        
+	
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 662(字)</span>
+	
+	
+
+      </div>
     </div>
-    <div id="collapseLinux" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingLinux">
-        <div class="panel-body">
-            <div class="collection">
-              
-                
-<a href="/20221119/Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/" class="collection-item"   itemprop="url">
-  <time datetime="2022-11-19T04:56:23.000Z" itemprop="datePublished">2022-11-19</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> Ubuntu双系统安装
-</a>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <p>摘要：git标签的使用 <span id="more"></span></p>
+<br>
+
+<h2 id="标签有什么用"><a href="#标签有什么用" class="headerlink" title="标签有什么用"></a>标签有什么用</h2><p>tag是git版本库的一个标记，指向某个commit的指针。</p>
+<p>tag主要用于发布版本的管理，一个版本发布之后，我们可以为git打上 v.1.0.1 v.1.0.2 …这样的标签。</p>
+<p>tag感觉跟branch有点相似，但是本质上和分工上是不同的：</p>
+<p>tag 对应某次commit, 是一个点，是不可移动的。<br>branch 对应一系列commit，是很多点连成的一根线，有一个HEAD 指针，是可以依靠 HEAD 指针移动的。<br>所以，两者的区别决定了使用方式，改动代码用 branch ,不改动只查看用 tag。</p>
+<p>tag 和 branch 的相互配合使用，有时候起到非常方便的效果，例如：已经发布了 v1.0 v2.0 v3.0 三个版本，这个时候，我突然想不改现有代码的前提下，在 v2.0 的基础上加个新功能，作为 v4.0 发布。就可以检出 v2.0 的代码作为一个 branch ，然后作为开发分支。</p>
+<h2 id="查看标签"><a href="#查看标签" class="headerlink" title="查看标签"></a>查看标签</h2><h3 id="查看仓库中的所有标签"><a href="#查看仓库中的所有标签" class="headerlink" title="查看仓库中的所有标签"></a>查看仓库中的所有标签</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git tag</span><br></pre></td></tr></table></figure>
+
+<h3 id="使用-l对标签查看进行过滤"><a href="#使用-l对标签查看进行过滤" class="headerlink" title="使用-l对标签查看进行过滤"></a>使用<code>-l</code>对标签查看进行过滤</h3><ul>
+<li>查看以3结尾的标签</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git tag -l <span class="string">&quot;*3&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="创建标签"><a href="#创建标签" class="headerlink" title="创建标签"></a>创建标签</h2><h3 id="轻量标签"><a href="#轻量标签" class="headerlink" title="轻量标签"></a>轻量标签</h3><ul>
+<li>给当前所处commit创建一个名字为TAG-NAME的标签</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git tag TAG-NAME</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>如何检出并切换commit？</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout COMMIT-ID</span><br></pre></td></tr></table></figure>
+
+<p>即可切换到对应COMMIT-ID的commit</p>
+</blockquote>
+<ul>
+<li>使用下列命令即可查看对应标签创建时的提交信息和对应的commit信息</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git show TAG-NAME</span><br></pre></td></tr></table></figure>
+
+<h3 id="附注标签"><a href="#附注标签" class="headerlink" title="附注标签"></a>附注标签</h3><p>附注标签是存储在 Git 数据库中的一个完整对象，它们是可以被校验的，其中包含打标签者的名字、电子邮件地址、日期时间，此外还有一个标签信息，并且可以使用GNU Privacy Guard(GPG)签名并验证。通常会建议创建附注标签，这样你可以拥有以上所有信息。但是如果你只是想用一个临时的标签，或者因为某些原因不想要保存这些信息，那么也可以用轻量标签。</p>
+<ul>
+<li>未签名的附注标签</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git tag -a TAG-NAME -m TAG-MESSAGE</span><br></pre></td></tr></table></figure>
+
+<h2 id="推送标签到远程服务器"><a href="#推送标签到远程服务器" class="headerlink" title="推送标签到远程服务器"></a>推送标签到远程服务器</h2><ul>
+<li>推送指定标签到远程</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push REMOTE-NAME TAG-NAME</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>推送所有标签到远程</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push REMOTE-NAME --tags</span><br></pre></td></tr></table></figure>
+
+<h2 id="删除标签"><a href="#删除标签" class="headerlink" title="删除标签"></a>删除标签</h2><ul>
+<li>删除指定标签</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git tag -d TAG-NAME</span><br></pre></td></tr></table></figure>
+
+<h3 id="将删除操作和远程同步"><a href="#将删除操作和远程同步" class="headerlink" title="将删除操作和远程同步"></a>将删除操作和远程同步</h3><ul>
+<li>直接同步删除操作</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push REMOTED-NAME :refs/tags/TAG-NAME</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>直接删除远程标签</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push REMOTE-NAME -d TAG-NAME</span><br></pre></td></tr></table></figure>
+
+<h2 id="检出标签"><a href="#检出标签" class="headerlink" title="检出标签"></a>检出标签</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout TAG-NAME</span><br></pre></td></tr></table></figure>
 
 
-              
-                
-<a href="/20221103/Ubuntu%E5%91%BD%E4%BB%A4/" class="collection-item"   itemprop="url">
-  <time datetime="2022-11-03T11:12:10.000Z" itemprop="datePublished">2022-11-03</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> Ubuntu命令
-</a>
-
-
-              
-                
-<a href="/20221102/%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E8%A3%85ubuntu/" class="collection-item"   itemprop="url">
-  <time datetime="2022-11-02T13:59:30.000Z" itemprop="datePublished">2022-11-02</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 移动硬盘装ubuntu
-</a>
-
-
-              
-            </div>
-        </div>
+      
     </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="https://chenmoshaoalen.github.io/20230829/git%E6%A0%87%E7%AD%BE/" title="git标签" target="_blank" rel="external">https://chenmoshaoalen.github.io/20230829/git标签/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong> 转载请注明出处！
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="/images/avatar.jpg" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="" target="_blank"><span class="text-dark">Alen</span><small class="ml-1x"></small></a></h3>
+        <div>无冥冥之志者，无昭昭之明；无惛惛之事者，无赫赫之功。</div>
+      </div>
+    </figure>
+  </div>
 </div>
+
+
     </div>
   </article>
-   
+  
+    
+  <section id="comments">
+  	
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    
+    <li class="next">
+      <a href="/20221119/Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/" title="Ubuntu双系统安装"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+    <li class="toggle-toc">
+      <a class="toggle-btn   collapsed  " data-toggle="collapse" href="#collapseToc" aria-expanded="false" title="文章目录" role="button">    <span>[&nbsp;</span><span>文章目录</span>
+        <i class="text-collapsed icon icon-anchor"></i>
+        <i class="text-in icon icon-close"></i>
+        <span>]</span>
+      </a>
+    </li>
+    
+  </ul>
+  
+  
+  
+  <div class="bar-right">
+    
+  </div>
+  </div>
+</nav>
+  
+
+
 </main>
 
   <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
@@ -450,6 +600,14 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
 
+   
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+   
 
 
   <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.3.5/dist/jquery.fancybox.min.js"></script>
