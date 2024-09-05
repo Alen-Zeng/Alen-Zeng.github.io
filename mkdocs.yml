@@ -1,4 +1,28 @@
-site_name: My Docs
-site_url: https://mydomain.org/mysite
+site_name: Alen Zeng
+site_url: https://alen-zeng.github.io/
 theme:
   name: material
+  language: zh
+
+  palette: 
+
+    # Palette toggle for light mode
+    - scheme: default
+      primary: teal
+      toggle:
+        icon: material/weather-night 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: black
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
